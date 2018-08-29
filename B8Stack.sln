@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B8Stack", "B8Stack\B8Stack.csproj", "{52DF5E6C-18D0-4F4A-BB5A-B08581D2315D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52DF5E6C-18D0-4F4A-BB5A-B08581D2315D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52DF5E6C-18D0-4F4A-BB5A-B08581D2315D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52DF5E6C-18D0-4F4A-BB5A-B08581D2315D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52DF5E6C-18D0-4F4A-BB5A-B08581D2315D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C21571A2-81AF-4D30-99D4-8EA5DA47439E}
+	EndGlobalSection
+EndGlobal
