@@ -11,5 +11,5 @@ This application simulates user input for the Sony Imagine Edge Remote applicati
 6. Press "Go"
 
 ## How to support
-If you have any suggestions or want to contribute please do so on github.
-If you want to donate to support this project you can do so with Bitcoin: 1MQvr2JEBQQ9bDjDNd7KFU6zBNufk3SJTR
+You can support this project by taking part in its development on github or send me some Bitcoins:
+1MQvr2JEBQQ9bDjDNd7KFU6zBNufk3SJTR
