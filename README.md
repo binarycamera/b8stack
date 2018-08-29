@@ -10,6 +10,9 @@ This application simulates user input for the Sony Imagine Edge Remote applicati
 5. Set cycle time according to your flash cycle time, exposure and image download speed. If you experience dropped pictures and over problems try increasing this value.
 6. Press "Go"
 
+## Download
+[Version 0.0.1](https://github.com/binarycamera/b8stack/raw/master/builds/0.0.1/B8Stack.exe)
+
 ## How to support
 You can support this project by taking part in its development on github or send me some Bitcoins:
 1MQvr2JEBQQ9bDjDNd7KFU6zBNufk3SJTR
