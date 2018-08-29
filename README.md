@@ -1,6 +1,6 @@
 # B8Stack
 Focus stacking application for Sony A7 cameras.
-This application simulates user input for the Sony Imagine Edge Remote application in order to implement a basic focus stacking mechanism. The can specify the number of pictures to take, the stepwidth of the focus shift for each picture and the number of pictures to take. This software is in a very early stage of development. It might not work for you. Please see the licence for further details about warranty.
+This application simulates user input for the Sony Imagine Edge Remote application in order to implement a basic focus stacking mechanism. The user can specify the number of pictures to take, the step width of the focus shift for each picture and the shift direction. This software is in a very early stage of its development. It might not work for you. Please see the licence for further details about warranty.
 
 ## Usage
 1. Disable autoreview on your camera
