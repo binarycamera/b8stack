@@ -9,7 +9,7 @@ This application simulates user input for the Sony Imagine Edge Remote applicati
 2. Connect your camera to your computer
 3. Start Sony Imagine Edge Remote application
 4. Start B8Stack
-5. Set cycle time according to your flash cycle time, exposure and image download speed. If you experience dropped pictures and over problems try increasing this value.
+5. Set cycle time according to your flash cycle time, exposure and image download speed. If you experience dropped pictures or other problems try increasing this value.
 6. Press "Go"
 
 ## Download
