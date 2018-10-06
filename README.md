@@ -14,6 +14,7 @@ This application simulates user input for the Sony Imagine Edge Remote applicati
 
 ## Download
 [Version 0.0.2](https://github.com/binarycamera/b8stack/raw/master/builds/0.0.2/B8Stack.exe)
+
 [Version 0.0.1](https://github.com/binarycamera/b8stack/raw/master/builds/0.0.1/B8Stack.exe)
 
 ## Changes
