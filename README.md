@@ -11,7 +11,13 @@ This application simulates user input for the Sony Imagine Edge Remote applicati
 6. Press "Go"
 
 ## Download
+[Version 0.0.2](https://github.com/binarycamera/b8stack/raw/master/builds/0.0.2/B8Stack.exe)
 [Version 0.0.1](https://github.com/binarycamera/b8stack/raw/master/builds/0.0.1/B8Stack.exe)
+
+## Changes
+
+### 0.0.2
+Added slider for focus steps per frame. The focus of each frame will be shifted by the selected multiple of the step width.
 
 ## How to support
 You can support this project by taking part in its development on github or send me some Bitcoins:

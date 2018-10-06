@@ -42,13 +42,16 @@
             this.CAboutButton = new System.Windows.Forms.Button();
             this.CRunTimer = new System.Windows.Forms.Timer(this.components);
             this.CDryRun = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.CSteps = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.CFrames)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCycleTime)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CSteps)).BeginInit();
             this.SuspendLayout();
             // 
             // CGoButton
             // 
-            this.CGoButton.Location = new System.Drawing.Point(15, 251);
+            this.CGoButton.Location = new System.Drawing.Point(15, 287);
             this.CGoButton.Name = "CGoButton";
             this.CGoButton.Size = new System.Drawing.Size(185, 37);
             this.CGoButton.TabIndex = 0;
@@ -102,7 +105,7 @@
             // 
             // CFrames
             // 
-            this.CFrames.Location = new System.Drawing.Point(129, 94);
+            this.CFrames.Location = new System.Drawing.Point(129, 130);
             this.CFrames.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -125,7 +128,7 @@
             // LFrames
             // 
             this.LFrames.AutoSize = true;
-            this.LFrames.Location = new System.Drawing.Point(12, 96);
+            this.LFrames.Location = new System.Drawing.Point(12, 132);
             this.LFrames.Name = "LFrames";
             this.LFrames.Size = new System.Drawing.Size(41, 13);
             this.LFrames.TabIndex = 6;
@@ -134,7 +137,7 @@
             // 
             // CCycleTime
             // 
-            this.CCycleTime.Location = new System.Drawing.Point(129, 144);
+            this.CCycleTime.Location = new System.Drawing.Point(129, 180);
             this.CCycleTime.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -157,7 +160,7 @@
             // LCycleTime
             // 
             this.LCycleTime.AutoSize = true;
-            this.LCycleTime.Location = new System.Drawing.Point(12, 146);
+            this.LCycleTime.Location = new System.Drawing.Point(12, 182);
             this.LCycleTime.Name = "LCycleTime";
             this.LCycleTime.Size = new System.Drawing.Size(77, 13);
             this.LCycleTime.TabIndex = 8;
@@ -166,14 +169,14 @@
             // 
             // CProgress
             // 
-            this.CProgress.Location = new System.Drawing.Point(15, 222);
+            this.CProgress.Location = new System.Drawing.Point(15, 258);
             this.CProgress.Name = "CProgress";
             this.CProgress.Size = new System.Drawing.Size(234, 23);
             this.CProgress.TabIndex = 9;
             // 
             // CAboutButton
             // 
-            this.CAboutButton.Location = new System.Drawing.Point(207, 251);
+            this.CAboutButton.Location = new System.Drawing.Point(207, 287);
             this.CAboutButton.Name = "CAboutButton";
             this.CAboutButton.Size = new System.Drawing.Size(42, 37);
             this.CAboutButton.TabIndex = 10;
@@ -190,18 +193,41 @@
             this.CDryRun.AutoSize = true;
             this.CDryRun.Checked = true;
             this.CDryRun.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CDryRun.Location = new System.Drawing.Point(15, 177);
+            this.CDryRun.Location = new System.Drawing.Point(15, 213);
             this.CDryRun.Name = "CDryRun";
             this.CDryRun.Size = new System.Drawing.Size(156, 17);
             this.CDryRun.TabIndex = 11;
             this.CDryRun.Text = "Only focus step, no capture";
             this.CDryRun.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 96);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Steps per frame";
+            // 
+            // CSteps
+            // 
+            this.CSteps.LargeChange = 1;
+            this.CSteps.Location = new System.Drawing.Point(128, 81);
+            this.CSteps.Maximum = 7;
+            this.CSteps.Minimum = 1;
+            this.CSteps.Name = "CSteps";
+            this.CSteps.Size = new System.Drawing.Size(121, 45);
+            this.CSteps.TabIndex = 14;
+            this.CSteps.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.CSteps.Value = 1;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(267, 309);
+            this.ClientSize = new System.Drawing.Size(267, 342);
+            this.Controls.Add(this.CSteps);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.CDryRun);
             this.Controls.Add(this.CAboutButton);
             this.Controls.Add(this.CProgress);
@@ -218,9 +244,10 @@
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "B8 Stack 0.01";
+            this.Text = "B8 Stack 0.02";
             ((System.ComponentModel.ISupportInitialize)(this.CFrames)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCycleTime)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CSteps)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,6 +268,8 @@
         private System.Windows.Forms.Button CAboutButton;
         private System.Windows.Forms.Timer CRunTimer;
         private System.Windows.Forms.CheckBox CDryRun;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TrackBar CSteps;
     }
 }
 

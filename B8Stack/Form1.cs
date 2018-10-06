@@ -93,6 +93,7 @@ namespace A7Stack
             CStepDirection.Enabled = true;
             CDryRun.Enabled = true;
             CFrames.Enabled = true;
+            CSteps.Enabled = true;
 
             CaptureCount = 0;
             CaptureCountTarget = 0;
@@ -109,6 +110,7 @@ namespace A7Stack
             CStepDirection.Enabled = false;
             CDryRun.Enabled = false;
             CFrames.Enabled = false;
+            CSteps.Enabled = false;
 
             CaptureCount = 0;
             CaptureCountTarget = (int)CFrames.Value;
@@ -139,7 +141,13 @@ namespace A7Stack
             }
 
             // send key sequence
-            SimulateUserInput(hwnd, CStepSize.SelectedIndex, CStepDirection.SelectedIndex, (int)CCycleTime.Value, CDryRun.Checked);
+            SimulateUserInput(
+                hwnd,
+                CStepSize.SelectedIndex,
+                CStepDirection.SelectedIndex,
+                (int)CCycleTime.Value,
+                CDryRun.Checked,
+                CSteps.Value);
 
             ++CProgress.Value;
             ++CaptureCount;
@@ -147,7 +155,7 @@ namespace A7Stack
                 ToIdle();
         }
 
-        private void SimulateUserInput(IntPtr hwnd, int stepSize, int stepDir, int cycleTime, bool dryRun)
+        private void SimulateUserInput(IntPtr hwnd, int stepSize, int stepDir, int cycleTime, bool dryRun, int steps)
         {
             int keyCode = 0x00;
             if(stepDir == 0)
@@ -171,13 +179,14 @@ namespace A7Stack
 
             if(keyCode != 0)
             {
-                //SetForegroundWindow(hwnd);
-                SendPressSequence(hwnd, keyCode);
-                Thread.Sleep(500); // give the sony some time to do the adjustment
+                for(int i = 0; i < steps; ++i)
+                {
+                    SendPressSequence(hwnd, keyCode);
+                    Thread.Sleep(80); // give the sony some time to do the adjustment
+                }
 
                 if (!dryRun)
                 {
-                    //SetForegroundWindow(hwnd);
                     SendPressSequence(hwnd, 0x31);
                 }
             }
