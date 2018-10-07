@@ -22,8 +22,11 @@ This application simulates user input for the Sony Imagine Edge Remote applicati
 ### 0.0.2
 Added slider for focus steps per frame. The focus of each frame will be shifted by the selected multiple of the step width.
 
+### 0.0.1
+Initial version.
+
 ## How to support
 You can support this project by
-* taking part in its development on github
-* send my feedback on binarycamera -at- codecreator -dot- net or dpreview forums (user: binarycamera)
-* send me some Bitcoins: 1MQvr2JEBQQ9bDjDNd7KFU6zBNufk3SJTR
+* Taking part in its development on github
+* Sending feedback to binarycamera -at- codecreator -dot- net or post on dpreview forums (user: binarycamera)
+* Donating Bitcoins: 1MQvr2JEBQQ9bDjDNd7KFU6zBNufk3SJTR
